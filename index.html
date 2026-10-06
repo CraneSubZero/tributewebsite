@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A little scrapbook for Lily and Ada, and the memories they made in the Philippines."
+    />
+    <meta name="theme-color" content="#f7eee4" />
+    <title>Lily &amp; Ada's Remembrance | Philippines</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="page-backdrop" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <a class="wordmark" href="#home" aria-label="Lily and Ada's Remembrance home">
+        <span class="wordmark-flower" aria-hidden="true">✿</span>
+        little keepsakes
+      </a>
+      <a class="topbar-link" href="#memories">Our photo album <span aria-hidden="true">↘</span></a>
+    </header>
+
+    <main id="home">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> A scrapbook from the Philippines</p>
+          <h1 id="page-title">Lily &amp; Ada's<br /><span>Remembrance</span></h1>
+          <p class="hero-note">
+            A little collection of sunny days, new places, and the lovely memories
+            we made together.
+          </p>
+          <a class="memory-link" href="#memories">Wander through our memories <span aria-hidden="true">↓</span></a>
+        </div>
+
+        <div class="hero-art" aria-label="A few favorite snapshots of Lily and Ada">
+          <span class="doodle doodle-sparkle" aria-hidden="true">✳</span>
+          <span class="doodle doodle-heart" aria-hidden="true">♡</span>
+          <figure class="polaroid hero-photo hero-photo-one">
+            <img src="assets/lily.jpg" alt="Lily enjoying a day in the Philippines" />
+            <figcaption>a day to keep</figcaption>
+          </figure>
+          <figure class="polaroid hero-photo hero-photo-two">
+            <img src="assets/ada.jpg" alt="Ada making a happy memory in the Philippines" />
+            <figcaption>sunshine &amp; smiles</figcaption>
+          </figure>
+          <span class="tape" aria-hidden="true"></span>
+        </div>
+        <a class="scroll-cue" href="#memories"><span></span> SCROLL TO REMEMBER</a>
+      </section>
+
+      <section class="memories section-shell" id="memories" aria-labelledby="memories-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> Pages from our little album</p>
+            <h2 id="memories-title">The days we’ll <em>keep</em></h2>
+          </div>
+          <p class="section-intro">
+            Four little snapshots, so the warmth of this visit can stay with us a while longer.
+          </p>
+        </div>
+
+        <div class="photo-grid">
+          <figure class="polaroid memory-photo memory-photo-lily">
+            <span class="photo-number">01</span>
+            <img src="assets/lily.jpg" alt="Lily during her visit to the Philippines" loading="lazy" />
+            <figcaption><span>Lily</span><small>a sunny little moment</small></figcaption>
+          </figure>
+          <figure class="polaroid memory-photo memory-photo-ada">
+            <span class="photo-number">02</span>
+            <img src="assets/ada.jpg" alt="Ada during her visit to the Philippines" loading="lazy" />
+            <figcaption><span>Ada</span><small>one for the scrapbook</small></figcaption>
+          </figure>
+          <figure class="polaroid memory-photo memory-photo-lily-two">
+            <span class="photo-number">03</span>
+            <img src="assets/lily2.jpg" alt="Another favorite moment with Lily in the Philippines" loading="lazy" />
+            <figcaption><span>Lily, again</span><small>little things, big memories</small></figcaption>
+          </figure>
+          <figure class="polaroid memory-photo memory-photo-ada-two">
+            <span class="photo-number">04</span>
+            <img src="assets/ada2.jpg" alt="Another favorite moment with Ada in the Philippines" loading="lazy" />
+            <figcaption><span>Ada, again</span><small>saving this one forever</small></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="closing section-shell" aria-labelledby="closing-title">
+        <span class="closing-flower" aria-hidden="true">✿</span>
+        <p class="eyebrow">Until the next adventure</p>
+        <h2 id="closing-title">The best souvenirs<br />are the <em>memories.</em></h2>
+        <p>Thank you for filling these days with laughter, love, and a little bit of magic.</p>
+        <span class="closing-signoff">with love, always <span aria-hidden="true">♡</span></span>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>Made with love for Lily &amp; Ada</span>
+      <span>Philippines, kept close <span aria-hidden="true">✿</span></span>
+    </footer>
+
+    <button class="music-toggle" id="music-toggle" type="button" aria-pressed="false">
+      <span class="music-icon" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+      </span>
+      <span class="music-label">Play a little lo-fi</span>
+      <span class="music-status" aria-hidden="true">♪</span>
+    </button>
+    <p class="sr-only" id="music-announcement" aria-live="polite"></p>
+  </body>
+</html>
