@@ -401,6 +401,90 @@ h2 {
   transform: rotate(3deg);
 }
 
+.video-memories {
+  width: 100%;
+  padding: 91px 0 100px;
+  border-top: 1px solid rgb(103 93 79 / 13%);
+  background: rgb(242 233 221 / 58%);
+}
+
+.video-inner {
+  width: min(1080px, 82%);
+  margin: 0 auto;
+}
+
+.video-memories .section-heading {
+  margin-bottom: 43px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 36px;
+}
+
+.video-card {
+  margin: 0;
+  padding: 13px 13px 0;
+  background: #fffefa;
+  box-shadow: 0 14px 32px rgb(67 54 42 / 14%);
+}
+
+.video-frame {
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: #eee8df;
+}
+
+.video-frame video {
+  display: block;
+  width: min(100%, 315px);
+  max-height: 560px;
+  aspect-ratio: 9 / 16;
+  background: #eee8df;
+  object-fit: cover;
+}
+
+.video-number {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+  display: grid;
+  width: 27px;
+  height: 27px;
+  place-items: center;
+  border-radius: 50%;
+  background: rgb(255 252 247 / 91%);
+  color: var(--rose-dark);
+  font-size: 9px;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+.video-card figcaption {
+  display: flex;
+  min-height: 77px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8px 5px 12px;
+}
+
+.video-card figcaption span {
+  color: #47413c;
+  font-family: var(--serif);
+  font-size: 20px;
+}
+
+.video-card figcaption small {
+  margin-top: 4px;
+  color: #8c847a;
+  font-size: 10px;
+  letter-spacing: 0.025em;
+}
+
 .closing {
   position: relative;
   width: 100%;
@@ -574,6 +658,10 @@ a:focus-visible {
     width: 86%;
   }
 
+  .video-inner {
+    width: 86%;
+  }
+
   .photo-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     column-gap: 40px;
@@ -686,6 +774,14 @@ a:focus-visible {
     width: 86%;
   }
 
+  .video-memories {
+    padding: 70px 0 76px;
+  }
+
+  .video-inner {
+    width: 86%;
+  }
+
   .memories {
     padding-top: 72px;
     padding-bottom: 78px;
@@ -707,6 +803,23 @@ a:focus-visible {
   .section-intro {
     max-width: 315px;
     margin-top: 13px;
+  }
+
+  .video-memories .section-heading {
+    margin-bottom: 31px;
+  }
+
+  .video-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .video-card {
+    padding: 9px 9px 0;
+  }
+
+  .video-card figcaption {
+    min-height: 67px;
   }
 
   .photo-grid {
